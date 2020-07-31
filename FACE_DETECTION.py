@@ -42,31 +42,3 @@ webcam.release()
 
 print("\n code completed")
 
-"""
-# Detect faces
-# detectMultiScale used to detect objects i.e  faces  of any sizes and return the coordinatesof the rectangle its a classifier
-face_coordinates = trained_face_data.detectMultiScale(grayscale_img)
-
-#Draw rectangle around the faces
-# now here (91,25,83,83) this were the coordinates ,(0,0,255)- this is the color which is red  , and that 2 is the tickness of the rectangle 
-#cv2.rectangle(img,(91,25),(91+83,25+83), (0,0,255),2)
-
-# here we are taking the coordinates dyanamically ie no hard coding but it will only detect one person form the frame but  if there are two people in a single frame we can chenge the face_coodinates[1]
-#[x,y,w,h] = face_coordinates[0]
-
-#now we are using for loop
-#randrange gives a random color everytime
-
-for (x,y,w,h) in face_coordinates:
-    cv2.rectangle(img,(x,y),(x+w,y+h), (randrange(256),randrange(256) ,randrange(256)),2)
-
-#print(face_coordinates)
-#this was the cooidinates shown [[91 25 83 83]]
-
-#Display the image with the faces
-cv2.imshow('Nash vaz face detector',img)
-cv2.waitKey()
-
-print("code completed")
-
-"""
